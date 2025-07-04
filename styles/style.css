@@ -16,3 +16,32 @@
     --tertiary-hover-color: #509def;
 
 }
+
+.container-nav{
+    background-color: var(--primary-color);
+    padding: 2% 0 2% 15%;
+    gap: 40px;
+    display: flex;
+}
+
+.container-nav__link {
+    color: var(--tertiary-color);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+}
+
+.container-nav__link:hover{
+    color: var(--tertiary-hover-color);
+    transition: all 100ms;
+}
+
+.container-main {
+    /* background-color: var(--primary-color); */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

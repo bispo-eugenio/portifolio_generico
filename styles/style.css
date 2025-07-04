@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Variáveis Globais do CSS*/
+:root {
+    /*Fonte da página*/
+    --font-primary: "Krona One", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+
+    /*Cor da página*/
+    --primary-color: #000000;
+    --secondary-color: #F6F6F6;
+    --tertiary-color:  #22D4FD;
+    
+    /*Hover*/
+    --primary-hover-color: #272727;
+    --tertiary-hover-color: #509def;
+
+}

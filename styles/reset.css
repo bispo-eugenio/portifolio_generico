@@ -1,0 +1,8 @@
+/*Limpa padronização do navegador*/
+*, *::before, *::before {
+    outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}

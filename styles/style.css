@@ -5,6 +5,11 @@
     /*Fonte da página*/
     --font-primary: "Krona One", sans-serif;
     --font-secondary: "Montserrat", sans-serif;
+
+    /* Tamanho da fonte */
+    --font-size-primary: 1.5rem;
+    --font-size-secondary: 2.25rem;
+    --font-size-tertiary: 1rem;
     
     /*Cor da página*/
     --primary-color: #000000;
@@ -20,7 +25,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: var(--primary-color);
 }
 
@@ -28,7 +33,7 @@ body {
 /* Mudar as fontes para rem depois */
 .container-nav{
     background-color: var(--primary-color);
-    padding: 2% 0 1% 15%;
+    padding: 2% 0 5% 15%;
     gap: 40px;
     display: flex;
 }
@@ -37,7 +42,7 @@ body {
     color: var(--tertiary-color);
     font-family: var(--font-secondary);
     font-weight: 600;
-    font-size: 24px;
+    font-size: var(--font-size-primary);
     line-height: 29px;
     align-items: center;
 }
@@ -49,68 +54,105 @@ body {
 
 .container-main {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap: 80px;
 }
 
-.container-main__sectionBox {
+.container-main__section-box {
     width: 33%;
     gap: 40px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
-.container-main__sectionBox--title{
+.container-main__section-box__title{
     color: var(--secondary-color);
     font-family: var(--font-primary);
     font-weight: 400;
-    font-size: 36px;
+    font-size: var(--font-size-secondary);
     line-height: 56px;
+    text-align: justify;
 }
-.container-main__sectionBox--titleDecoration {
+.container-main__section-box__title--decoration {
     color: var(--tertiary-color);
 }
 
-.container-main__sectionBox--text {
+.container-main__section-box__text {
     color: var(--secondary-color);
     font-family: var(--font-secondary);
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--font-size-primary);
     line-height: 36px;
+    text-align: justify;
 }
 
-.container-main__sectionBox--linkBox {
-    gap: 10px;
+.link-box {
+    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container-main__sectionBox--linkBoxTitle {
+.link-box__title {
     color: var(--secondary-color);
     font-family: var(--font-primary);
-    font-size: 24px;
+    font-size: var(--font-size-primary);
     font-weight: 400;
     line-height: 40px;
 }
 
-.container-main__sectionBox--linkBoxButton {
+.link-box__button {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
     width: 100%;
-    max-width: 180px;
+    max-width: 75px;
     height: 40px;
-    padding: 0 16px;
+    padding: 20px 85px;
     border: 2px solid var(--tertiary-color);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
-.container-main__sectionBox--linkBoxButton img {
+.link-box__button h4 {
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-tertiary);
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 36px;
+}
+
+.link-box__button:hover {
+    background-color: var(--primary-hover-color);
+    padding: 22px 87px;
+    transition: all 400ms;
+}
+
+.link-box__button img {
     width: 20px;
+}
+
+
+.main-footer {
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer__title {
+    color: var(--primary-color);
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: var(--font-size-primary);
+    line-height: 36px;
+    text-align: center;
+    padding: 1% 0;
+    user-select: none;
 }
